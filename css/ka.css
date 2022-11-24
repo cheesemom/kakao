@@ -1,0 +1,732 @@
+body {
+  overflow-x: hidden;
+}
+
+
+
+/* Header */
+.header {
+  line-height: 100px;
+}
+
+.header .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 0;
+  margin-right: 350px;
+}
+
+.header .container nav {
+  display: flex;
+}
+
+.header .container nav>ul {
+  display: flex;
+  gap: 50px;
+  font-size: 16px;
+}
+
+.header .container nav>ul i {
+  font-size: 20px;
+}
+
+.header .container nav>ul i:hover {
+  color: #FFEF6B;
+}
+
+
+
+/* MainVisual */
+.main_visual {
+  position: relative;
+  height: 90vh;
+  background-color: #FFEF6B;
+  letter-spacing: 0.6px;
+  padding: 100px 0;
+}
+
+.main_visual .inner {
+  position: absolute;
+  inset: 49% auto auto 33%;
+  transform: translate(-50%, -50%);
+}
+
+.main_visual .inner h2 {
+  font-size: 47px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 50px;
+}
+
+.main_visual .inner p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.main_visual .inner p.sec {
+  margin: 20px 0 60px 0;
+}
+
+.main_visual .app {
+  display: flex;
+  font-size: 16px;
+  font-weight: 300;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.main_visual .inner .app a {
+  display: inline-block;
+  line-height: 58px;
+  width: 180px;
+  height: 60px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 32px 8px rgb(0 0 0 / 3%);
+  transform: translateZ(0);
+  transition: background-color .3s ease-in-out;
+}
+
+.main_visual .app a>.button_effect {
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  left: 0;
+  display: block;
+  line-height: 58px;
+  width: 240px;
+  height: 60px;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .6s cubic-bezier(.785, .135, .15, .86);
+}
+
+.main_visual .app a:hover .button_effect {
+  transform: scaleX(1);
+  transform-origin: left;
+  background: #FFEF6B;
+  border-radius: 10px;
+}
+
+.main_visual .app a:hover {
+  font-weight: 500;
+  border: 1px solid #333;
+}
+
+.main_visual .inner .app .google i {
+  font-size: 18px;
+}
+
+.main_visual .inner .app .apple i {
+  font-size: 23px;
+}
+
+.main_visual .hello img {
+  width: 800px;
+  position: absolute;
+  inset: 50% auto auto 67%;
+  transform: translate(-50%, 0);
+}
+
+
+
+/* Remit */
+.remit {
+  position: relative;
+  letter-spacing: 0.6px;
+  padding: 100px 0;
+  height: 100vh;
+}
+
+.remit img {
+  margin: 10px 0 0 280px;
+}
+
+.remit .r_des {
+  position: absolute;
+  inset: 50% auto auto 67%;
+  transform: translate(-50%, -50%);
+}
+
+.remit .r_des h2 {
+  font-size: 47px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 50px;
+}
+
+.remit .r_des p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 160px;
+}
+
+.remit .r_des .r_Btn {
+  font-size: 16px;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.remit .r_des .r_Btn a {
+  display: inline-block;
+  line-height: 58px;
+  width: 240px;
+  height: 60px;
+  text-align: center;
+  background: #FFEF6B;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 32px 8px rgb(0 0 0 / 3%);
+  transform: translateZ(0);
+  transition: background-color .3s ease-in-out;
+}
+
+.remit .r_Btn a>.button_effect {
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  left: 0;
+  display: block;
+  line-height: 58px;
+  width: 240px;
+  height: 60px;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .6s cubic-bezier(.785, .135, .15, .86);
+}
+
+.remit .r_Btn a:hover .button_effect {
+  transform: scaleX(1);
+  transform-origin: left;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.remit .r_Btn a:hover {
+  font-weight: 500;
+  border: 1px solid #FFEF6B;
+}
+
+.remit .r_Btn i {
+  font-size: 18px;
+}
+
+.remit .r_des img {
+  position: absolute;
+  inset: 68.2% auto auto -37%;
+  transform: translate(-50%, -50%);
+  width: 210px;
+}
+
+
+
+/* Save */
+.save {
+  position: relative;
+  letter-spacing: 0.6px;
+  padding: 100px 0;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+.save .s_des {
+  position: absolute;
+  inset: 50% auto auto 37%;
+  transform: translate(-50%, -50%);
+}
+
+.save .s_des h2 {
+  font-size: 47px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 50px;
+}
+
+.save .s_des p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.save .saveBtn {
+  display: flex;
+  font-size: 16px;
+  font-weight: 300;
+  gap: 20px;
+  box-sizing: border-box;
+  margin-bottom: 60px;
+}
+
+.save .saveBtn a {
+  display: inline-block;
+  line-height: 58px;
+  width: 180px;
+  height: 60px;
+  text-align: center;
+  background: #FFEF6B;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 32px 8px rgb(0 0 0 / 3%);
+  transform: translateZ(0);
+  transition: background-color .3s ease-in-out;
+}
+
+.save .saveBtn a>.button_effect {
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  left: 0;
+  display: block;
+  line-height: 58px;
+  width: 240px;
+  height: 60px;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .6s cubic-bezier(.785, .135, .15, .86);
+}
+
+.save .saveBtn a:hover .button_effect {
+  transform: scaleX(1);
+  transform-origin: left;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.save .saveBtn a:hover {
+  font-weight: 500;
+  border: 1px solid #FFEF6B;
+}
+
+.save .saveBtn i {
+  font-size: 18px;
+}
+
+.save figure img {
+  position: absolute;
+  inset: 71.5% auto auto 70%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* Challenge */
+.challenge {
+  position: relative;
+  letter-spacing: 0.6px;
+  padding: 100px 0;
+  height: 100vh;
+  background: #FFEF6B;
+}
+
+.challenge .c_des {
+  position: absolute;
+  inset: 50% auto auto 35%;
+  transform: translate(-50%, -50%);
+}
+
+.challenge .c_des h2 {
+  font-size: 47px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 50px;
+}
+
+.challenge .c_des p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.challenge .chaBtn {
+  font-size: 16px;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.challenge .chaBtn a {
+  display: inline-block;
+  line-height: 58px;
+  width: 240px;
+  height: 60px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 32px 8px rgb(0 0 0 / 3%);
+  transform: translateZ(0);
+  transition: background-color .3s ease-in-out;
+}
+
+.challenge .chaBtn a>.button_effect {
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  left: 0;
+  display: block;
+  line-height: 58px;
+  width: 240px;
+  height: 60px;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .6s cubic-bezier(.785, .135, .15, .86);
+}
+
+.challenge .chaBtn a:hover .button_effect {
+  transform: scaleX(1);
+  transform-origin: left;
+  background: #FFEF6B;
+  border-radius: 10px;
+}
+
+.challenge .chaBtn a:hover {
+  font-weight: 500;
+  border: 1px solid #333;
+}
+
+.challenge .chaBtn i {
+  font-size: 18px;
+}
+
+.challenge .car {
+  position: absolute;
+  inset: 18% auto auto 48%;
+  bottom: 0;
+  right: -200px;
+  animation: car_move 5s infinite linear;
+}
+
+@keyframes car_move {
+  from {
+    right: 1000px;
+  }
+}
+
+
+
+/* Together */
+.together {
+  position: relative;
+  letter-spacing: 0.6px;
+  padding: 100px 0;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+.together .to_des {
+  position: absolute;
+  inset: 50% auto auto 67%;
+  transform: translate(-50%, -50%);
+}
+
+.together .to_des h2 i {
+  font-size: 16px;
+  position: absolute;
+  inset: 22% auto auto 61%;
+  transform: translate(-50%, -50%);
+}
+
+.together .to_des h2 {
+  font-size: 47px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 50px;
+}
+
+.together .to_des p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.together .to_des .toBtn {
+  font-size: 16px;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.together .to_des .toBtn a {
+  display: inline-block;
+  line-height: 58px;
+  width: 240px;
+  height: 60px;
+  text-align: center;
+  background: #FFEF6B;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 32px 8px rgb(0 0 0 / 3%);
+  transform: translateZ(0);
+  transition: background-color .3s ease-in-out;
+}
+
+.together .toBtn a>.button_effect {
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  left: 0;
+  display: block;
+  line-height: 58px;
+  width: 240px;
+  height: 60px;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .6s cubic-bezier(.785, .135, .15, .86);
+}
+
+.together .toBtn a:hover .button_effect {
+  transform: scaleX(1);
+  transform-origin: left;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.together .toBtn a:hover {
+  font-weight: 500;
+  border: 1px solid #FFEF6B;
+}
+
+.together .to_des .toBtn i {
+  font-size: 18px;
+}
+
+.together .move .moim img {
+  position: absolute;
+  inset: 21% auto auto 29%;
+  transform: translate(-50%, -50%);
+  width: 370px;
+  animation: move 2s 0.2s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.together .move .pocket img {
+  position: absolute;
+  inset: 50% auto auto 25.7%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* Design */
+.design {
+  position: relative;
+  letter-spacing: 0.6px;
+  padding: 100px 0;
+  height: 100vh;
+  text-align: center;
+}
+
+.design .d_des {
+  position: absolute;
+  inset: 30% auto auto 50%;
+  transform: translate(-50%, -50%);
+}
+
+.design .d_des h2 {
+  font-size: 47px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 50px;
+}
+
+.design .d_des p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.design .d_des a {
+  display: inline-block;
+  line-height: 58px;
+  width: 240px;
+  height: 60px;
+  text-align: center;
+  background: #FFEF6B;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  overflow: hidden;
+  box-shadow: 0px 5px 32px 8px rgb(0 0 0 / 3%);
+  transform: translateZ(0);
+  transition: background-color .3s ease-in-out;
+}
+
+.design .d_des a>.button_effect {
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  left: 0;
+  display: block;
+  line-height: 58px;
+  width: 240px;
+  height: 60px;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .6s cubic-bezier(.785, .135, .15, .86);
+}
+
+.design a:hover .button_effect {
+  transform: scaleX(1);
+  transform-origin: left;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.design a:hover {
+  font-weight: 500;
+  border: 1px solid #FFEF6B;
+}
+
+.design .d_des a>i {
+  font-size: 18px;
+}
+
+.design .card .muzi {
+  position: absolute;
+  inset: 70% auto auto 32%;
+  transform: translate(-50%, -50%);
+}
+
+.design .card .ccon {
+  position: absolute;
+  inset: 70% auto auto 44%;
+  transform: translate(-50%, -50%);
+}
+
+.design .card .lion {
+  position: absolute;
+  inset: 70% auto auto 56%;
+  transform: translate(-50%, -50%);
+}
+
+.design .card .peac {
+  position: absolute;
+  inset: 70% auto auto 68%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* Footer */
+.footer {
+  letter-spacing: 0.6px;
+  font-size: 13px;
+  font-weight: 300;
+  border-top: 1px solid #d9d9d9;
+}
+
+.footer .foot_inner {
+  width: 1080px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.footer .service {
+  margin-bottom: 25px;
+}
+
+.footer .service>.menu,
+.footer .indi>.info {
+  display: flex;
+}
+
+.footer ul li {
+  position: relative;
+}
+
+.footer .service>ul>li>a {
+  display: block;
+  padding: 10px;
+}
+
+.footer .indi>ul>li {
+  display: block;
+  padding: 10px;
+}
+
+.footer .menu li~li::before,
+.footer .info li~li::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background: #ddd;
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  margin: auto;
+  transform: translateY(-20%);
+}
+
+.footer .menu li a.bold {
+  font-weight: 500;
+}
+
+.footer .copy {
+  font-size: 12px;
+  color: #888;
+}
+
+.footer .sns {
+  float: right;
+  display: flex;
+  gap: 15px;
+  margin-top: -40px;
+}
+
+
+
+/* ToTop */
+.toTop {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 12;
+}
+
+.toTop button {
+  position: relative;
+  cursor: pointer;
+  border-radius: 50%;
+  border: transparent;
+  width: 88px;
+  height: 88px;
+  display: block;
+  background: url(../img/totop.png) no-repeat center;
+}
+
+.toTop button span {
+  font-size: 18px;
+  font-weight: 800;
+  position: absolute;
+  inset: 78% auto auto 50%;
+  transform: translate(-50%, -50%);
+}
